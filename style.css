@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background: linear-gradient(160deg, pink, blue);
+}
+button{
+    margin: 2rem;
+    background-color: aqua;
+    color: aliceblue;
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 0 12px 8px rgba(0, 0, 0, 0.1);
+
+}
+button:hover{
+    background-color: aquamarine;
+}
+.modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.modalOverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modalContent{
+    background-color: white;
+    padding: 12rem;
+    position: relative;
+    cursor: pointer;
+}
+.modal.open{
+    display: flex;
+}
